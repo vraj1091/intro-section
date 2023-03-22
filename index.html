@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<main> 
+  <nav>
+    <ul>
+      <div class="left">
+        <li class="logo" ><img src="./images/logo.svg" alt="logo"></li>
+        <li class="btn" id="1" onClick="changeImage()">Features<img src="./images/icon-arrow-down.svg" id="change" ></li>
+        <li class="btn" id="1" onClick="changeImage1()">Company<img src="./images/icon-arrow-down.svg" id="change1"></li>
+        <li class="btn">Careers</li>
+        <li class="btn">About</li>
+      </div>
+      <div class="right">
+        <li><button>Login</button></li>
+        <li ><button class="btn2" >Signup</button></li>
+      </div>
+    </ul>
+    <div class="features-down" id="hide">
+      <p><img src="./images/icon-todo.svg" alt=""> Todo List</p>
+      <p><img src="./images/icon-calendar.svg" alt="">Calender</p>
+      <p><img src="./images/icon-reminders.svg" alt="">Reminder</p>
+      <p><img src="./images/icon-planning.svg" alt="">Planning</p>
+  
+    </div>
+     <div class="company-down" id="hide1">
+      <p>History</p>
+      <p>Our Team</p>
+      <p>Blog</p>
+    </div>
+  </nav>
+
+  <div class="wrapper">
+    <div class="left">
+      <h1> Make<br> remote work</h1>
+      <p> Get your team in sync, no matter your location. Streamline processes,create team rituals, and watch productivity soar.</p>
+      <button>Learn more</button>
+      <div class="footer-icon">
+        <img src="./images/client-databiz.svg" alt="">
+        <img src="./images/client-audiophile.svg" alt="">
+        <img src="./images/client-meet.svg" alt="">
+        <img src="./images/client-maker.svg" alt="">
+
+      </div>
+    </div>
+    <div class="right">
+      <img src="./images/image-hero-desktop.png" height="600" width="90%" alt="">
+    </div>
+  </div>
+  
+  <script>
+    function changeImage(){
+      let displayImage = document.getElementById('change')
+      if(displayImage.src.match('./images/icon-arrow-down.svg')){
+        displayImage.src='./images/icon-arrow-up.svg'
+        document.getElementById('hide').style.display='block'
+
+      }
+      else{
+        displayImage.src='./images/icon-arrow-down.svg'
+        document.getElementById('hide').style.display='none'
+      }
+    }
+    function changeImage1(){
+      let displayImage = document.getElementById('change1')
+      if(displayImage.src.match('./images/icon-arrow-down.svg')){
+        displayImage.src='./images/icon-arrow-up.svg'
+        document.getElementById('hide1').style.display='block'
+
+      }
+      else{
+        displayImage.src='./images/icon-arrow-down.svg'
+        document.getElementById('hide1').style.display='none'
+      }
+    }
+   
+  </script>
+</main>  
+</body>
+</html>
