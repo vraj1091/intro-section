@@ -13,21 +13,25 @@ nav{
    background-color: hsl(0, 0%, 98%);
 
 }
+nav .navflex{
+    display: flex;
+    justify-content: space-between;
+}
 nav ul {
     display: flex;
     justify-content: space-between;
     list-style: none;
     color: hsl(0, 0%, 41%);
 }
-nav ul .left{
+nav  .left{
     display: flex;
     padding-top: 10px;
 }
-nav ul .left .btn{
+nav  .left .btn{
     margin-inline: 30px;
     cursor: pointer;
 }
-nav ul .right{
+nav  .right{
     display: flex;
     padding-top: 0% !important;
     
@@ -36,34 +40,34 @@ nav ul .right{
 nav ul .logo{
     padding-right: 60px;
 }
-nav ul .right button{
+nav .right button{
     margin-inline: 10px;
     color: hsl(0, 0%, 41%);
 
 }
-nav ul .left .btn img{
+nav .left .btn img{
 padding-inline: 5px;
 }
 nav .left .btn:hover{
     color: hsl(0, 0%, 8%);
 }
-nav ul .right button{
+nav .right button{
     border: none;
     background-color: transparent;
     width: 100px;
     height: 40px;
    
 }
-nav ul .right button:hover{
+nav .right button:hover{
     cursor: pointer;
 }
-nav ul .right .btn2{
+nav .right .btn2{
     border: 2px solid;
     border-color: hsl(0, 0%, 41%);
     border-radius: 15px;
 
 }
-nav ul .right button:hover{
+nav .right button:hover{
     border-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 8%);
 }
